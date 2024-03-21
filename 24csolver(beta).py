@@ -2,6 +2,7 @@ from itertools import permutations, product
 
 def solve_24(numbers):
     ops_combinations = product('+-*/', repeat=len(numbers)-1)
+    paran=product('()',repeat=2*len(numbers)-4)
     for perm in permutations(numbers):
         for ops in ops_combinations:
             expr = str(perm[0])
