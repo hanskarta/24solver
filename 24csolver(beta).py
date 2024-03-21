@@ -1,6 +1,5 @@
 from itertools import permutations, product
 
-#this version doesnt have any feature yet justa regular 24 card solver
 
 def card_value(card):
     if card in ['J', 'Q', 'K']:
